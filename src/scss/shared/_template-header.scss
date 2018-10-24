@@ -1,0 +1,55 @@
+.msw-page-header {
+	background-color: $brand-orange;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 8rem;
+	h1 {
+		text-transform: capitalize;
+	}
+	img {
+		height: 12rem;
+		margin: 2rem 0;
+		margin-left: auto;
+		opacity: .5;
+	}
+	@media(max-width: $laptop) {
+		padding: 0 4rem;
+		h1 {
+			font-size: 3rem;
+		}
+		img {
+			height: 8rem;
+		}
+	}
+	@media (max-width: $phablet) {
+		img {
+			height: 5rem;
+		}
+	}
+	@media(max-width: 450px) {
+		h1 {
+			font-size: 2.3rem;
+			line-height: 2.5rem;
+		}
+		img {
+			height: 4rem;
+		}
+	}
+	&.yellow {
+		background-color: $brand-yellow;
+	}
+	&.blue {
+		background-color: $brand-blue-dk;
+	}
+	&.green {
+		background-color: $brand-green;
+	}
+	&.purple {
+		background-color: $brand-purple;
+	}
+	&.fuscia {
+		background-color: $brand-fuscia;
+	}
+}

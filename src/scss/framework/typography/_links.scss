@@ -1,0 +1,157 @@
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: $brand-blue;
+	&:hover {
+		color: $brand-yellow;
+	}
+	
+	nav &,
+	&.button {
+	
+	}
+}
+.button {
+	margin-top: 2rem;
+	color: #FFF;
+	background-color: $button-color;
+	text-decoration: none;
+	border-radius: 8px;
+	border: 2px solid $button-color;
+	text-align: center;
+	&.button__white {
+		background-color: #FFF;
+		color: $button-color;
+		border: 2px solid #FFF;
+		&:hover {
+			background-color: $button-color;
+			color: #FFF;
+		}
+	}
+	&:hover {
+		background-color: rgba($button-color, 0);
+		color: $button-color;
+	}
+}
+.yellow,
+.blue,
+.green,
+.purple,
+.fuscia {
+	.button {
+		background-color: #FFF;
+		border-color: #FFF;
+		&:hover {
+			color: #FFF;
+			border-color: #FFF;
+		}
+	}
+}
+.yellow {
+	.button {
+		color: $brand-yellow;
+		&:hover {
+			background-color: rgba($brand-yellow, 0);
+		}
+	}
+	&.light {
+		.button {
+			background-color: $brand-yellow;
+			border-color: $brand-yellow;
+			color: #FFF;
+			&:hover {
+				background-color: rgba($brand-yellow, 0);
+				color: $brand-yellow;
+				border-color: $brand-yellow;
+			}
+		}
+		
+	}
+}
+.blue {
+	.button {
+		color: $brand-blue;
+		&:hover {
+			background-color: rgba($brand-blue, 0);
+
+		}
+	}
+	&.light {
+		.button {
+			background-color: $brand-blue;
+			border-color: $brand-blue;
+			color: #FFF;
+			&:hover {
+				background-color: rgba($brand-blue, 0);
+				color: $brand-blue;
+				border-color: $brand-blue;
+			}
+		}
+		
+	}
+}
+.green {
+	.button {
+		color: $brand-green;
+		&:hover {
+			background-color: rgba($brand-green, 0);
+
+		}
+	}
+	&.light {
+		.button {
+			background-color: $brand-green;
+			border-color: $brand-green;
+			color: #FFF;
+			&:hover {
+				background-color: rgba($brand-green, 0);
+				color: $brand-green;
+				border-color: $brand-green;
+			}
+		}
+		
+	}
+}
+.purple {
+	.button {
+		color: $brand-purple;
+		&:hover {
+			background-color: rgba($brand-purple, 0);
+
+		}
+	}
+	&.light {
+		.button {
+			background-color: $brand-purple;
+			border-color: $brand-purple;
+			color: #FFF;
+			&:hover {
+				background-color: rgba($brand-purple, 0);
+				color: $brand-purple;
+				border-color: $brand-purple;
+			}
+		}
+		
+	}
+}
+.fuscia {
+	.button {
+		color: $brand-fuscia;
+		&:hover {
+			background-color: rgba($brand-fuscia, 0);
+
+		}
+	}
+	&.light {
+		.button {
+			background-color: $brand-fuscia;
+			border-color: $brand-fuscia;
+			color: #FFF;
+			&:hover {
+				background-color: rgba($brand-fuscia, 0);
+				color: $brand-fuscia;
+				border-color: $brand-fuscia;
+			}
+		}
+	}
+}

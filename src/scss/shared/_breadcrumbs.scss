@@ -1,0 +1,44 @@
+#breadcrumbs {
+	line-height: 1;
+	padding: 2rem 8rem;
+	text-align: right;
+
+	ul {
+		font-size: 0;
+		list-style: none;
+		margin: 0;
+		display: none;
+	}
+
+	li {
+		display: inline-block;
+		font-size: $font-size-base;
+		font-size: 1.4rem;
+		color: $brand-orange;	
+		a {
+			font-weight: 300;
+			color: $brand-orange;
+		}
+		& + li {
+			&::before {
+				content: "\2022";
+				display: inline-block;
+				margin-left: 0.5rem;
+				margin-right: 0.5rem;
+			}
+		}
+	}
+
+	@media (max-width: $laptop) {
+		width: calc(100% - 80px);
+	}
+
+	@media (max-width: $phablet) {
+		width: calc(100% - 30px);
+	}
+	@media (min-width: $tablet) {
+		ul {
+			display: block;
+		}
+	}
+}

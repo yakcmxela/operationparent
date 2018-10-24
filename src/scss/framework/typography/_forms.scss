@@ -1,0 +1,82 @@
+button,
+input[type="button"],
+input[type="submit"],
+select,
+option {
+	appearance: none;
+	cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+.button {
+	background-color: $button-color;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: normal;
+	line-height: normal;
+	padding: 1rem 3rem;
+	transition: all 0.25s;
+
+	&:hover {
+		background-color: $button-hover;
+	}
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
+select,
+select[multiple] {
+	box-sizing: border-box;
+	box-shadow: none;
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: normal;
+	width: 100%;
+	border: 0px;
+	box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+	background-color: rgba(44, 191, 207, 0.1);
+	color: $brand-grey-md;
+	width: 100% !important;
+	padding: 1rem !important;
+	border-radius: 8px;
+	font-weight: 300;
+	margin: 2px 0;
+}
+span {
+	min-height: auto !important;
+}
+select {
+	padding: .9rem !important;
+}
+.mc4wp-form-fields {
+	input {
+		background-color: #FFF;
+	}
+}

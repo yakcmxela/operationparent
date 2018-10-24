@@ -1,0 +1,75 @@
+.gform_fields {
+	list-style: none;
+	margin: 0 0 1rem;
+}
+
+.gfield {
+	label {
+		display: block;
+		line-height: 1;
+		margin-bottom: 0.5rem;
+	}
+
+	input,
+	select,
+	textarea {
+		border-color: #000;
+		display: block;
+		padding: 0.5rem 1rem;
+		width: 100%;
+	}
+	textarea {
+		height: 10rem;
+	}
+
+}
+
+
+.gform_footer{
+	
+	button, input[type="button"], input[type="submit"], .button{
+		
+		&:hover{
+		}
+	}
+}
+
+.gfield_error {
+	input {
+		border: 1px solid $brand-red;
+	}
+}
+
+.gform_wrapper {
+	.validation_message {
+
+		&.instruction {
+			color: $brand-red;
+		}
+
+	}
+}
+
+.validation_error{
+	color: $brand-red;
+	line-height: 1.3;
+	margin-bottom: 1rem;
+}
+
+.validation_message{
+	color: $brand-red;
+	font-size: 1.4rem;
+}
+
+.gform_validation_container {
+	clip: rect(0,0,0,0);
+	height: 0;
+	left: -9999rem;
+	position: absolute;
+	width: 0;
+	z-index: -9999;
+}
+
+.gform_confirmation_message{
+	font-weight: 700;
+}

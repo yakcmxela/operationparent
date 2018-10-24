@@ -1,0 +1,41 @@
+.container {
+	@include clearfix();
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $max-width;
+	width: $container-width;
+
+	@media (max-width: $laptop) {
+		width: calc(100% - 80px);
+	}
+
+	@media (max-width: $phablet) {
+		width: calc(100% - 30px);
+	}
+}
+
+.container__main {
+	@include clearfix();
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5rem;
+	max-width: $max-width-main;
+	width: $container-width;
+
+	@media (max-width: $laptop) {
+		width: calc(100% - 80px);
+	}
+
+	@media (max-width: $phablet) {
+		width: calc(100% - 30px);
+	}
+}
+
+.sidebar {
+	float: right;
+	width: 25%;
+
+	@media (max-width: $tablet) {
+		width: 100%;
+	}
+}

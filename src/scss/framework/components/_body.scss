@@ -1,0 +1,37 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+
+	@media(min-width: $fullsize){
+		font-size: #{1000px/$design-width}vw;
+	}
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	outline: none;
+}
+body {
+	color: $brand-black;
+	font-family: $font-family-base;
+	font-size: #{$font-size-base/10px}rem;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+	padding-top: $header-mobile-height;
+
+	&.nav-ocn.nav-open {
+		overflow: hidden;
+	}
+
+	&.home {
+		padding-top: 0;
+	}
+
+	@media (max-width: $phablet) {
+		padding-top: 90px;
+	}
+}
+.wrapper {
+	min-height: 50vh;
+}

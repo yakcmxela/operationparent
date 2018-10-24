@@ -1,0 +1,41 @@
+.footer-callout {
+	color: #FFF;
+	padding: 4rem 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	@media(max-width: $laptop) {
+		padding: 4rem;
+	}
+	h2 {
+		font-family: $font-family-callout;
+		font-size: 5rem;
+		font-weight: normal;
+		margin: 0;
+	}
+	h3 {
+		font-weight: 300;
+		strong {
+			font-weight: 600;
+		}
+	}
+	&.yellow {
+		background-color: $brand-yellow;
+	}
+	&.blue {
+		background-color: $brand-blue;
+	}
+	&.green {
+		background-color: $brand-green;
+	}
+	&.purple {
+		background-color: $brand-purple;
+	}
+	&.fuscia {
+		background-color: $brand-fuscia;
+	}
+	.footer-callout__content {
+		width: 50rem;
+	}
+}

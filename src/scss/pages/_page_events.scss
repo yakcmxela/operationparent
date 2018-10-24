@@ -1,0 +1,99 @@
+.type-tribe_events {
+	display: flex;
+	margin-bottom: 3rem;
+	dd {
+		margin-left: 0px;
+	}
+	@media(max-width: $phablet) {
+		flex-direction: column;
+	}
+}
+
+.tribe-events-abbr {
+	text-decoration: none !important;
+}
+
+.single-tribe_events {
+	.tribe-events-event-meta {
+		margin: 0;
+	}
+}
+	
+
+.tribe-events-meta-group {
+	margin: 2rem 0;
+}
+
+.tribe-events-cost {
+	display: block;
+}
+.single-tribe_events {
+	.tribe-events-before-html {
+		display: none;
+	}
+}
+.tribe-events-single {
+	.type-tribe_events {
+		display: block;
+		margin: 2rem 0;
+	}
+	.tribe-events-event-image {
+		margin: 0;
+		min-width: 0px;
+		max-width: none;
+	}
+}
+.tribe-events-event-image {
+	min-width: 320px;
+	max-width: 35%;
+	min-height: 200px;	
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	&.placeholder {
+		background-color: $brand-orange;
+		background-size: 75%;
+		background-repeat: no-repeat;
+	}
+	@media(max-width: $tablet) {
+		min-width: 160px;
+	}
+	@media(max-width: $phablet) {
+		min-width: 100%;
+		max-width: none;
+		height: 200px;
+	}
+}
+
+.tribe-events-event-content-container {
+	border: solid 1px #979797;
+	border-left: 0px;
+	padding: 2.8rem;
+	width: 100%;
+	@media(max-width: $phablet) {
+		border-left: solid 1px #979797;
+		border-top: 0px;
+		h2 {
+			font-size: 2rem;	
+		}
+	}
+}
+
+.tribe-events-event-cost {
+	margin: 1rem 0;
+}
+
+.tribe-events-loop {
+	.tribe-events-event-meta {
+		font-weight: 700;
+		font-size: 1.4rem;
+		color: $brand-grey-dk;
+		font-family: $font-family-headline;
+		margin: 1rem 0 2rem 0;
+	}
+}
+
+.tribe-events-list-separator-month {
+	display: none;
+}
